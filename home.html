@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Design for Learning Course</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<main class="course-container">
+    <!-- Course Header -->
+    <header class="course-header">
+        <h1>Universal Design for Learning Course</h1>
+        <p class="course-description">
+            Master the principles of Universal Design for Learning to create inclusive,
+            accessible, and engaging educational experiences for all learners.
+        </p>
+    </header>
+
+    <!-- Course Stats -->
+    <section class="course-stats">
+        <div class="stat-card">
+            <span class="stat-icon">📚</span>
+            <span class="stat-value">3</span>
+            <span class="stat-label">Units</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-icon">🔄</span>
+            <span class="stat-value">12</span>
+            <span class="stat-label">Interactive Modules</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-icon">📊</span>
+            <span class="stat-label">Progress Tracking</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-icon">🎯</span>
+            <span class="stat-label">Self-Paced Learning</span>
+        </div>
+    </section>
+
+    <!-- Course Navigation -->
+    <nav class="course-navigation">
+        <div class="unit-tabs">
+            <button class="unit-btn active" data-unit="1">
+                <span class="unit-number">Unit 1</span>
+                <span class="unit-title">UDL Foundations</span>
+            </button>
+            <button class="unit-btn" data-unit="2">
+                <span class="unit-number">Unit 2</span>
+                <span class="unit-title">Implementation Strategies</span>
+            </button>
+            <button class="unit-btn" data-unit="3">
+                <span class="unit-number">Unit 3</span>
+                <span class="unit-title">Assessment & Adaptation</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Course Content Container -->
+    <section id="courseContent" class="course-content">
+        <!-- Content will be dynamically inserted here by JavaScript -->
+    </section>
+
+    <!-- Learning Progress -->
+    <aside class="learning-progress">
+        <h2>Your Progress</h2>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+            </div>
+            <span class="progress-text">0% Complete</span>
+        </div>
+    </aside>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

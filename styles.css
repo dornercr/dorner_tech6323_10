@@ -1,0 +1,236 @@
+/* Modern color palette and variables */
+:root {
+    --primary: #4f46e5;
+    --primary-dark: #4338ca;
+    --success: #059669;
+    --background: #f8fafc;
+    --surface: #ffffff;
+    --text: #1e293b;
+    --text-light: #64748b;
+    --border: #e2e8f0;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --radius: 0.75rem;
+}
+
+/* Base styles */
+.course-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--background);
+}
+
+/* Enhanced header */
+.course-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 2rem;
+}
+
+.course-header h1 {
+    font-size: 2.5rem;
+    color: var(--text);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Improved stats cards */
+.course-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid var(--border);
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+    color: var(--primary);
+}
+
+.stat-value {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--text);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Enhanced unit tabs */
+.unit-tabs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin: 2rem 0;
+}
+
+.unit-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.unit-btn:hover {
+    background: #f8fafc;
+    border-color: var(--primary);
+}
+
+.unit-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary-dark);
+}
+
+.unit-number {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.unit-title {
+    font-size: 1rem;
+    color: inherit;
+}
+
+/* Progress bar improvements */
+.progress-container {
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-top: 3rem;
+}
+
+.progress-bar {
+    height: 0.75rem;
+    background: var(--border);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--success);
+    transition: width 0.5s ease;
+}
+
+.progress-text {
+    font-weight: 500;
+    color: var(--text);
+    margin-top: 0.75rem;
+}
+
+/* Forum enhancements */
+.forum-board {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    margin: 2rem 0;
+}
+
+.create-post-section {
+    background: #f8fafc;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.forum-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    margin: 0.75rem 0;
+    transition: border-color 0.2s ease;
+}
+
+.forum-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+.forum-button {
+    background: var(--primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.forum-button:hover {
+    background: var(--primary-dark);
+}
+
+/* Forum post styling */
+.forum-post {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.forum-post:hover {
+    box-shadow: var(--shadow);
+}
+
+.post-main {
+    padding: 1.5rem;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.post-author {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.post-content {
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.reply {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 0.5rem;
+    border-left: 3px solid var(--primary);
+}

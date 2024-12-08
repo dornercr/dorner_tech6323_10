@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Design for Learning Course - Welcome</title>
+    <style>
+        /* Modern CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #1a2b3c;
+            background-color: #f8fafc;
+        }
+
+        h1, h2, h3 {
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        /* Container */
+        .landing-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 16px;
+            margin-bottom: 4rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            text-align: center;
+            color: white;
+            margin-bottom: 2rem;
+            font-weight: 800;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Course Overview */
+        .course-overview {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 4rem;
+        }
+
+        /* Learning Outcomes */
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .outcome-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .outcome-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .outcome-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Instructor Section */
+        .instructor-profile {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .instructor-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #4f46e5;
+        }
+
+        .instructor-title {
+            color: #64748b;
+            margin: 0.5rem 0;
+        }
+
+        .contact-label {
+            font-weight: bold;
+            color: #4f46e5;
+        }
+
+        /* Course Intro */
+        .intro-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Buttons */
+        .cta-button, .primary-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #4f46e5;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .cta-button:hover, .primary-button:hover {
+            background: #4338ca;
+            transform: translateY(-2px);
+        }
+
+        .secondary-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #f1f5f9;
+            color: #1e293b;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .secondary-button:hover {
+            background: #e2e8f0;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .page-footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 4rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .instructor-profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .intro-actions {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<main class="landing-container">
+    <section class="hero">
+        <h1>Universal Design for Learning Course</h1>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="lead">Transform your teaching approach with Universal Design for Learning principles.</p>
+                <a href="home.html" class="cta-button">Start Learning</a>
+            </div>
+            <div class="hero-image">
+                <img src="udl-seo.png" alt="Universal Design for Learning concept illustration" />
+            </div>
+        </div>
+    </section>
+
+    <section class="course-overview">
+        <h2>Course Description</h2>
+        <p>This comprehensive course introduces you to the principles of Universal Design for Learning (UDL),
+            ensuring all learners have equitable access to education. You will explore ways to present content,
+            facilitate multiple forms of expression, and engage learners of diverse backgrounds, preferences,
+            and abilities.</p>
+    </section>
+
+    <section class="learning-outcomes">
+        <h2>Expected Learning Outcomes</h2>
+        <div class="outcomes-grid">
+            <div class="outcome-card">
+                <div class="outcome-icon">🎯</div>
+                <h3>Core Principles</h3>
+                <p>Identify and apply the core principles of UDL in learning environments</p>
+            </div>
+            <div class="outcome-card">
+                <div class="outcome-icon">🔄</div>
+                <h3>Multiple Modalities</h3>
+                <p>Develop strategies to present information through multiple modalities</p>
+            </div>
+            <div class="outcome-card">
+                <div class="outcome-icon">📊</div>
+                <h3>Inclusive Assessment</h3>
+                <p>Create inclusive assessments and activities that foster learner engagement</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="instructor-info">
+        <h2>Meet Your Instructor</h2>
+        <div class="instructor-profile">
+            <div class="instructor-image">
+                <img src="photo.jpg" alt="Instructor profile photo" />
+            </div>
+            <div class="instructor-details">
+                <h3>Charles Dorner</h3>
+                <p class="instructor-title">UDL Expert & Educational Consultant</p>
+                <p>
+                    <span class="contact-label">Email:</span>
+                    <a href="mailto:charles@davidtechnology.org">charles@davidtechnology.org</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="course-intro">
+        <h2>Course Introduction</h2>
+        <div class="intro-content">
+            <p>This course sets the stage for a transformative approach to teaching and learning.
+                By embracing UDL, you will discover how to design flexible learning experiences that
+                support all learners, regardless of their backgrounds, abilities, or learning preferences.</p>
+            <p>As you delve deeper into the material, you will gain practical insights and tools for
+                enhancing accessibility and fostering a more inclusive educational environment.</p>
+            <div class="intro-actions">
+                <a href="home.html" class="primary-button">Begin Course</a>
+                <a href="#" class="secondary-button">Download Syllabus</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="page-footer">
+    <p>&copy; 2024 Universal Design for Learning Course. All rights reserved.</p>
+    <a href="references.html">References</a></p>
+</footer>
+</body>
+</html>
